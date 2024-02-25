@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.contrnedor {
+  display: grid;
+  grid-template-columns: 1fr; /* Una columna para las imágenes */
+  gap: 5px; /* Espacio entre las imágenes */
+  justify-content: center; /* Centrar las imágenes horizontalmente */
+  align-items: center; /* Centrar las imágenes verticalmente */
+  padding: 0px;
+}
+
+.contrnedor img {
+  max-width: 100%; /* Hace que las imágenes sean responsive */
+  height: auto;
+}
+
+footer {
+  background: url(img/cuarto.webp);
+  background-color: #f0f0f0;
+  padding: 0;
+  max-width: 100%; /* Hace que las imágenes sean responsive */
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.contrnedor2 {
+  grid-template-columns: 1fr;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contrnedor2 img {
+  max-width: 100%;
+  height: auto;
+} 
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cerrar-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+button#siAsistire {
+    background-color: green;
+    color: white;
+}
+
+button#noAsistire {
+    background-color: red;
+    color: white;
+}
